@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
  * <p>Date: 13-12-22
  * <p>Version: 1.0
  */
-//@EnableAutoConfiguration
+@EnableAutoConfiguration
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-//    public static void main(String[] args) {
-//        SpringApplication.run(UserController.class);
-//    }
+    public static void main(String[] args) {
+        SpringApplication.run(UserController.class);
+    }
 
     @RequestMapping("/{id}")
     private User view(@PathVariable("id") Long id) {
